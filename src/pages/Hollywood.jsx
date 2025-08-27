@@ -6,6 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge.jsx'
 import { useNavigate } from 'react-router-dom'
 import youtubeService from '../services/youtubeService'
+import { BannerAd, ResponsiveAd } from '../components/GoogleAds'
 
 // Hollywood movies organized by decades
 const hollywoodMovies = {
@@ -183,6 +184,11 @@ const Hollywood = () => {
         </div>
       </section>
 
+      {/* Google Ad - Banner */}
+      <div className="container mx-auto px-4 py-4">
+        <BannerAd className="text-center" />
+      </div>
+
       {/* Decade Navigation */}
       <section className="py-8 bg-gray-900/50">
         <div className="container mx-auto px-4">
@@ -205,6 +211,11 @@ const Hollywood = () => {
           </div>
         </div>
       </section>
+
+      {/* Google Ad - Responsive */}
+      <div className="container mx-auto px-4 py-6">
+        <ResponsiveAd className="text-center" />
+      </div>
 
       {/* Movies Grid */}
       <section className="container mx-auto px-4 py-16">

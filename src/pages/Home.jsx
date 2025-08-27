@@ -7,6 +7,7 @@ import { Badge } from '@/components/ui/badge.jsx'
 import VideoPlayer, { VideoGrid } from '../components/VideoPlayer'
 import youtubeService from '../services/youtubeService'
 import { useNavigate } from 'react-router-dom'
+import { BannerAd, ResponsiveAd, InFeedAd } from '../components/GoogleAds'
 
 // Sample movie data with behind-the-scenes content
 const sampleMovies = [
@@ -410,6 +411,11 @@ const Home = () => {
         <div className="absolute top-1/2 right-10 w-8 h-8 bg-red-500/10 rounded-full animate-float-slow" />
       </section>
 
+      {/* Google Ad - Banner */}
+      <div className="container mx-auto px-4 py-4">
+        <BannerAd className="text-center" />
+      </div>
+
       {/* Category Selection Table */}
       <section className="py-4 bg-gradient-to-r from-gray-900/50 to-black/50">
         <div className="container mx-auto px-4">
@@ -511,6 +517,11 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Google Ad - Responsive */}
+      <div className="container mx-auto px-4 py-6">
+        <ResponsiveAd className="text-center" />
+      </div>
+
       {/* Hollywood Section */}
       <section className="container mx-auto px-4 py-16">
         <div className="flex items-center justify-between mb-8">
@@ -580,6 +591,11 @@ const Home = () => {
           ))}
         </div>
       </section>
+
+      {/* Google Ad - In-Feed */}
+      <div className="container mx-auto px-4 py-6">
+        <InFeedAd className="text-center" />
+      </div>
 
       {/* Bollywood Section */}
       <section className="container mx-auto px-4 py-16 bg-gradient-to-r from-gray-900/50 to-black/50">
@@ -682,6 +698,11 @@ const Home = () => {
           />
         </section>
       )}
+
+      {/* Google Ad - Before Stats */}
+      <div className="container mx-auto px-4 py-6">
+        <ResponsiveAd className="text-center" />
+      </div>
 
       {/* Stats Section */}
       <section className="py-16 bg-gradient-to-r from-gray-900 to-black">
