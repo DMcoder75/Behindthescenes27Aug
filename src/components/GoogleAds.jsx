@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 // Google AdSense Component
 const GoogleAds = ({ 
-  adClient = "ca-pub-XXXXXXXXXXXXXXXXX", // Replace with your AdSense publisher ID
+  adClient = "ca-pub-5737444505564075", // Replace with your AdSense publisher ID
   adSlot,
   adFormat = "auto",
   adLayout = "",
